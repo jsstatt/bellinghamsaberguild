@@ -236,7 +236,6 @@ navNodes.addEventListener('click', e => {
 
 // email
 $('.submit').click(function (event) {
-  event.preventDefault();
   const email = $('.email').val();
   const subject = $('.subject').val();
   const message = $('.message').val();
