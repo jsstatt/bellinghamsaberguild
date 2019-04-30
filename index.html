@@ -2,81 +2,157 @@
 <html lang="en" dir="ltr">
   <head>
     <meta charset="utf-8">
-    <link rel="stylesheet" href="https://fronts.googleapis.com/css?family=Montserrat:400,800">
-    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <link href="https://fonts.googleapis.com/css?family=Orbitron:400,500,700,900" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="css/style.min.css">
     <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
-    <script src="js/script.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script
+      src="https://code.jquery.com/jquery-3.3.1.min.js"
+      integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+      crossorigin="anonymous"></script>
+
     <title>Bellingham Saber Guild</title>
   </head>
   <body>
-    <div class="header">
-      <div class="inner_header">
-        <div class="logo_container">
-          <img src="img/BellinghamSaberGuild.png" alt="Bellingham Saber Guild"
-          onclick="smoothScroll(document.getElementById('first'))">
-        </div>
-        <ul class="navigation">
-          <a class="w3-button" onclick="smoothScroll(document.getElementById('first'))"><li>Home</li></a>
-          <a class="w3-button" onclick="smoothScroll(document.getElementById('second'))"><li>About</li></a>
-          <a class="w3-button" onclick="smoothScroll(document.getElementById('third'))"><li>Gallery</li></a>
-          <a class="w3-button" onclick="smoothScroll(document.getElementById('forth'))"><li>Resources</li></a>
-          <a class="w3-button" onclick="smoothScroll(document.getElementById('fifth'))"><li>Contacts</li></a>
-        </ul>
-      </div>
-    </div>
-    <div class="home" id="first">
-      <ul>
-        <li><br><br></li>
-        <li><h1>We Are Bellingham Saber Guild</h1></li>
-        <li><button class="w3-button w3-light-green w3-round-xlarge w3-hover-grey"
-          onclick="smoothScroll(document.getElementById('second'))">Learn More</button></li>
-      </ul>
-    </div>
-    <div class="about" id="second">
-      <div class="about-bar">
-        <h1>About</h1><hr>
-          <p>Join the fight to save or control the galaxy! We meet once a month
-            and have an epic duel to determine the fate of the galaxy. The guild
-            is open to non-western students and people of all ages! FX Lightsabers
-            are a way to unite people and have a good time! We look forward to meeting
-            new people who are interested in Star Wars or just lightsabers.
-            Anyways, hopefully, you will join us and have fun! May the Force
-            be with you!</p>
-      </div>
-    </div>
-    <div class="gallery" id="third">
-      <h1>Gallery</h1>
-      <div class="w3-row-padding w3-margin-top">
-        <div class="w3-third">
-          <img src="img/gallery/pic.jpg" style="width:100%">
-        </div>
+    <div class="parallax-wrapper-home" id="tab-home">
 
-        <div class="w3-third">
-          <img src="img/gallery/pic2.jpg" style="width:100%">
-        </div>
+    </div>
+    <div class="background-container"></div>
+    <div class="wing-container">
+      <img src="img/svg/SaberSword.svg" alt="" class="center enter-button logo-sword">
+      <img src="img/svg/SaberRight.svg" alt="" class="center enter-button logo-right">
+      <img src="img/svg/SaberLeft.svg" alt="" class="center enter-button logo-left">
 
-        <div class="w3-third">
-          <img src="img/gallery/pic3.jpg" style="width:100%">
+    </div>
+    <div class="ham-container active">
+      <img src="img/svg/SaberRight_circle.svg" alt="" class="center enter-button logo-right-circle">
+      <img src="img/svg/SaberLeft_circle.svg" alt="" class="center enter-button logo-left-circle">
+      <img src="img/svg/SaberCenter.svg" alt="" class="center enter-button logo-center">
+      <a class="center-text enter-button center-saber third-saber">Enter</a>
+      <div class="center">
+        <div class="menu paused">
+          <img class="menu-top" src="img/svg/Saber2.svg">
+          <div class="top-line"></div>
+          <img class="menu-bottom" src="img/svg/Saber.svg">
+          <div class="bottom-line"></div>
         </div>
-      </div>
-      <div class="w3-row-padding w3-margin-top">
-        <div class="w3-third">
-          <img src="img/gallery/pic4.jpg" style="width:100%">
-        </div>
-
-        <div class="w3-third">
-          <img src="img/gallery/pic5.png" style="width:100%">
-        </div>
-
-        <div class="w3-third">
-          <img src="img/gallery/pic6.jpg" style="width:100%">
+        <div class="menu-items">
+          <ul>
+            <li><a class="menu-home">Home</a></li>
+            <li><a class="menu-info">Info</a></li>
+            <li><a class="menu-gallery">Gallery</a></li>
+            <li><a class="menu-contacts">Contacts</a></li>
+          </ul>
         </div>
       </div>
     </div>
-    <div class="resources" id="forth">
-      <div class="resources-bar">
-        <h1>Resources</h1><hr>
-      </div>
+    <div class="spacer">
+
     </div>
+      <div class="regular-wrapper-info" id="tab-info">
+        <div class="content-wrapper">
+          <div id="preview" class="sub-tab">
+            <h2 class="orbitron">PREVIEW</h2>
+            <p>The purpose of Bellingham Saber Guild to bring people together who share a common interest in Lightsabers and Star Wars as well as a desire to make new friends, connections and most importantly to have fun. We host events once a month, allowing both WWU and non-WWU students to get together and enjoy games such as lightsaber tag, battle choreography, and other fun activities. Outside the event, we have meetings that occur two times a month. Each session has indoor activities were ranging from mini-games to making a functional lightsaber. Outside the event, we have meetings that occur two times a month. Each session has indoor activities were ranging from mini-games to making a functional lightsaber</p>
+            <h2 class="orbitron">WHY JOIN?</h2>
+            <p>Joining this club is a fun and exciting way to not only make new friends and connection here at WWU, but it offers members a chance to grow and prepare themselves for the future. The activities and events that this club offers can build traits and skill necessary for the job market such as leadership, responsibility, financing, video editing, event planning, team building, electronics, record keeping, first aid, public speaking, performance, and choreography, etc. Another amazing factor is the ability to learn about other and participate in the club’s democratic process to elect new members to the council as well as put forward ideas on making the club better and more appealing to future members.</p>
+            <h2 class="orbitron">WHEN DO WE MEET?</h3>
+            <p>We Usually have an Event once a month where we meet to have a grand duel to determine the fate of the galaxy. We also hold meetings at least once a month (usually in Academic West) to discuss the clubs future as well as have small events to keep members engaged.
+            This sounds amazing but are the events safe?
+            Safety is always paramount within this club! When we say duel it’s more like Tag. the rules for the duel follow the LARP (live action role play) when a member is tapped on the arm or leg, they lose that limb. If they are tapped on the chest they are out of the match. If a member loses three limbs they’re out of the match. HEADSHOTS, BASEBALL BATTING AND ANY RECKLESS BEHAVIOR IS NOT TOLERATED AND WILL BE IMMEDIATELY DELT WITH.</p>
+          </div>
+          <div id="ranking" class="sub-tab" style="display:none">
+            <div class="columns">
+              <div class="col1">
+                <h2 class="orbitron">RANKING</h2>
+                <p>This club is structured in a similar fashion to the Jedi temple in Star Wars Lore. The ranking system gives students the opportunity to grow as well as work towards goals to better themselves. The ranking structure is as show on the right.</p>
+                <p>When a student or community member joins the club, they begin as an Initiate and work their way up to become a Knight and possibly a Master. In order to move up the ranking scale, members must complete certain requirements. As members move up in rank the tasks become more challenging but in a fun and productive way that does not interfere with a member’s academics.</p>
+                <p>Once the rank of D'Jedi has been reached the D'Jedi may choose from the three D'Jedi classes: Consular, Sentinel, and Guardian. Each class will be asigned special tasks within the guild.</p>
+                <p>Once he</p>
+              </div>
+              <div class="col2">
+              </div>
+            </div>
+          </div>
+          <div id="council" class="sub-tab" style="display:none">
+            <div class="caroucel">
+                <a class="caroucel-button caroucel-button-left is-hidden"><i class="fa fa-arrow-circle-left fa-3x"></i></a>
+              <div class="caroucel-track-container">
+                <ul class="caroucel-track" id="tracker">
+                  <li class="caroucel-slide current-slide">
+                    <img class="caroucel-images w3-circle" src="img/council/Stephen.jpg" alt="">
+                  </li>
+                  <li class="caroucel-slide">
+                    <img class="caroucel-images w3-circle" src="img/council/Anthony.jpg" alt="">
+                  </li>
+                  <li class="caroucel-slide">
+                    <img class="caroucel-images w3-circle" src="img/council/Ryan.jpg" alt="">
+                  </li>
+                  <li class="caroucel-slide">
+                    <img class="caroucel-images w3-circle" src="img/council/Tom.jpg" alt="">
+                  </li>
+                  <li class="caroucel-slide">
+                    <img class="caroucel-images w3-circle" src="img/council/Heather.jpg" alt="">
+                  </li>
+                </ul>
+              </div>
+              <a class="caroucel-button caroucel-button-right"><i class="icon fa fa-arrow-circle-right fa-3x"></i></a>
+              <div class="caroucel-nav">
+                <button class="caroucel-indicator current-slide"></button>
+                <button class="caroucel-indicator"></button>
+                <button class="caroucel-indicator"></button>
+                <button class="caroucel-indicator"></button>
+                <button class="caroucel-indicator"></button>
+              </div>
+            </div>
+          </div>
+        </div>
+          <div class="content-info">
+            <a onclick="openSubTab('preview')">
+              <div class="button info-btn1">
+                <h1 class="btn-text">PREVIEW</h1>
+              </div>
+            </a>
+
+            <a onclick="openSubTab('ranking')">
+              <div class="button info-btn2">
+                <h1 class="btn-text">RANKING</h1>
+              </div>
+            </a>
+
+            <a onclick="openSubTab('council')">
+              <div class="button info-btn3">
+                <h1 class="btn-text">COUNCIL</h1>
+              </div>
+            </a>
+          </div>
+      </div>
+      <div class="parallax-wrapper-gallery">
+
+      </div>
+      <div class="regular-wrapper-gallery" id="tab-gallery">
+        <div class="content-wrapper">
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+        </div>
+      </div>
+      <div class="parallax-wrapper-contacts">
+
+      </div>
+      <div class="regular-wrapper-contacts" id="tab-contacts">
+        <div class="content-wrapper">
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+        </div>
+      </div>
+
+
+      <div class="Social-container">
+
+      </div>
+
+    <script src="js/script.js"></script>
   </body>
 </html>

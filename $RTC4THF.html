@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <link href="https://fonts.googleapis.com/css?family=Orbitron:400,500,700,900" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="css/style.min.css">
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script
+      src="https://code.jquery.com/jquery-3.3.1.min.js"
+      integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+      crossorigin="anonymous"></script>
+
+    <title>Bellingham Saber Guild</title>
+  </head>
+  <body>
+    <section class="et-hero-tabs home">
+      <div class="ham-container et-hero-tabs-container active">
+        <img src="img/svg/SaberSword.svg" alt="" class="center enter-button logo-sword">
+        <img src="img/svg/SaberRight.svg" alt="" class="center enter-button logo-right">
+        <img src="img/svg/SaberLeft.svg" alt="" class="center enter-button logo-left">
+        <img src="img/svg/SaberCenter.svg" alt="" class="center enter-button logo-center">
+        <a class="center-text enter-button center-saber third-saber">Enter</a>
+        <div class="center">
+          <div class="menu paused">
+            <img class="menu-top" src="img/svg/Saber2.svg">
+            <div class="top-line"></div>
+            <img class="menu-bottom" src="img/svg/Saber.svg">
+            <div class="bottom-line"></div>
+          </div>
+          <div class="menu-items">
+            <ul>
+              <li><a class="menu-home">Home</a></li>
+              <li><a class="menu-info">Info</a></li>
+              <li><a class="menu-gallery">Gallery</a></li>
+              <li><a class="menu-contacts">Contacts</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+    <main class="et-main about">
+      <section class="et-slide about" id="tab-about">
+        <h1>About</h1>
+        <h3>something about es6</h3>
+      </section>
+      <section class="et-slide overview" id="tab-overview">
+        <h1>Overview</h1>
+        <h3>something about flexbox</h3>
+      </section>
+      <section class="et-slide gallery" id="tab-council">
+        <h1>Council</h1>
+        <h3>something about react</h3>
+        <div class="caroucel">
+            <a class="caroucel-button caroucel-button-left is-hidden"><i class="fa fa-arrow-circle-left fa-3x"></i></a>
+          <div class="caroucel-track-container">
+            <ul class="caroucel-track" id="tracker">
+              <li class="caroucel-slide current-slide">
+                <img class="caroucel-images w3-circle" src="img/council/Stephen.jpg" alt="">
+              </li>
+              <li class="caroucel-slide">
+                <img class="caroucel-images w3-circle" src="img/council/Anthony.jpg" alt="">
+              </li>
+              <li class="caroucel-slide">
+                <img class="caroucel-images w3-circle" src="img/council/Ryan.jpg" alt="">
+              </li>
+              <li class="caroucel-slide">
+                <img class="caroucel-images w3-circle" src="img/council/Tom.jpg" alt="">
+              </li>
+              <li class="caroucel-slide">
+                <img class="caroucel-images w3-circle" src="img/council/Heather.jpg" alt="">
+              </li>
+            </ul>
+          </div>
+          <a class="caroucel-button caroucel-button-right"><i class="icon fa fa-arrow-circle-right fa-3x"></i></a>
+          <div class="caroucel-nav">
+            <button class="caroucel-indicator current-slide"></button>
+            <button class="caroucel-indicator"></button>
+            <button class="caroucel-indicator"></button>
+            <button class="caroucel-indicator"></button>
+            <button class="caroucel-indicator"></button>
+          </div>
+        </div>
+      </section>
+      <section class="et-slide gallery" id="tab-gallery">
+        <h1>Gallery</h1>
+        <h3>something about react</h3>
+      </section>
+      <section class="et-slide resources" id="tab-resources">
+        <h1>Resources</h1>
+        <h3>something about angular</h3>
+      </section>
+      <section class="et-slide contacts" id="tab-contacts">
+        <h1>Contacts</h1>
+        <h3>something about other</h3>
+      </section>
+    </main>
+    <script src="js/script.js"></script>
+  </body>
+</html>
+
+
+<section class="et-slide home-buffer">
+</section>
+<section class="et-slide info" id="tab-info">
+  <h1>Info</h1>
+  <h3>something about flexbox</h3>
+</section>
+<section class="et-slide gallery" id="tab-gallery">
+  <h1>Gallery</h1>
+  <h3>something about react</h3>
+</section>
+<section class="et-slide contacts" id="tab-contacts">
+  <h1>Contacts</h1>
+  <h3>something about react</h3>
+</section>
+
+.home{
+  width: 100%;
+  height: 1595px;
+  background: url(../img/CoverPhotoSky.JPG);
+  background-size: cover;
+  background-position: center;
+  background-size: 100% auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  font-size: 32px;
+}
