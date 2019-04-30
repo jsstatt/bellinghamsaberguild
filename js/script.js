@@ -234,7 +234,7 @@ navNodes.addEventListener('click', e => {
 })
 
 // Gallery
-var folder = "https://www.bellinghamsaberguild.com/img/gallery";
+var folder = "img/gallery";
  $.ajax({
      url: folder,
      success: function(data) {
