@@ -249,7 +249,7 @@ var folder = "img/gallery";
 $(document).ready(function() {
   $('.submit').click(function() {
     $.ajax({
-      url: "img/gallery",
+      url: "img",
       success: function(data){
       $(data).find("a:contains(.jpg)").each(function(){
         // will loop through
