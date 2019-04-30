@@ -234,6 +234,7 @@ navNodes.addEventListener('click', e => {
 })
 
 // Gallery
+ $('.submit').click(function(){
 var folder = "img/gallery";
  $.ajax({
      url: folder,
@@ -243,6 +244,7 @@ var folder = "img/gallery";
          });
      }
  });
+});
 
 
  $('.submit').click(function(){
