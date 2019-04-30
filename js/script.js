@@ -246,6 +246,21 @@ var folder = "img/gallery";
  });
 });
 
+$(document).ready(function() {
+  $('.submit').click(function() {
+    $.ajax({
+      url: "img/gallery",
+      success: function(data){
+      $(data).find("a:contains(.jpg)").each(function(){
+        // will loop through
+        var images = $(this).attr("href");
+          $('<option value="' + images + '"></option>').html(images).appendTo('.product-images');
+        });
+      }
+    });
+  });
+});
+
 
  $('.submit').click(function(){
    $.ajax({url: "js/text.txt", success: function(result){
