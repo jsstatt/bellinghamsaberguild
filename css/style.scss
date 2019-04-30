@@ -857,6 +857,7 @@ div.button:active {
   height: 500px;
   width: 50%;
   margin: auto;
+  margin-bottom: 40em;
 }
 
 .caroucel-images {
@@ -931,4 +932,7 @@ div.button:active {
 
 }
 
-// Pop up nav
+// Email form
+label, input, textarea {
+  display: block;
+}

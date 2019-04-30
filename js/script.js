@@ -1,3 +1,4 @@
+$(document).ready(function() {
 
 // Scroll on Button Click
 window.smoothScroll = function(target) {
@@ -231,9 +232,39 @@ navNodes.addEventListener('click', e => {
 	moveToSlide(track, currentSlide, targetSlide);
 	updateNodes(currentNode, targetNode);
 	displayArrows(slides, rightButton, leftButton, targetIndex);
+})
 
+// email
+$('.submit').click(function (event) {
+  event.preventDefault();
+  const email = $('.email').val();
+  const subject = $('.subject').val();
+  const message = $('.message').val();
+  const status = $('.status');
+  status.empty();
+
+  if (email.length > 5 && email.includes('@') && email.includes('.')) {
+
+  } else {
+    status.append('<div>Email not valid</div>');
+    event.preventDefault();
+  }
+
+  if (subject.length > 2) {
+
+  } else {
+    status.append('<div>Subject not valid</div>');
+    event.preventDefault();
+  }
+
+  if (message.length > 20) {
+
+  } else {
+    status.append('<div>Content not valid</div>');
+    event.preventDefault();
+  }
 
 })
 
 
-// Smoke EFFECT
+})
