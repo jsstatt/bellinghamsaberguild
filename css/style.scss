@@ -75,6 +75,10 @@ div.info-btn3{
   font-family: 'Orbitron';
 }
 
+.header-font {
+  font-family: 'Orbitron';
+}
+
 div.button.info-btn1:hover {
   background-color: rgba(201,235,254,1);
   left: -300px;
@@ -931,6 +935,12 @@ div.button:active {
 .bordering-images {
 
 }
+
+// Gallery
+p:target {
+  background: red;
+}
+
 
 // Email form
 label, input, textarea {

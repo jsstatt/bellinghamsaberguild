@@ -1,4 +1,3 @@
-$(document).ready(function() {
 
 // Scroll on Button Click
 window.smoothScroll = function(target) {
@@ -234,6 +233,18 @@ navNodes.addEventListener('click', e => {
 	displayArrows(slides, rightButton, leftButton, targetIndex);
 })
 
+// Gallery
+var folder = "../img/gallery";
+ $.ajax({
+     url: folder,
+     success: function(data) {
+         $(data).find("a").attr("href", function(i, val) {
+             $(".gallery").append("<img src='" + folder + '/' + val + "'>");
+         });
+     }
+ });
+
+
 // email
 $('.submit').click(function (event) {
   const email = $('.email').val();
@@ -262,8 +273,5 @@ $('.submit').click(function (event) {
     status.append('<div>Content not valid</div>');
     event.preventDefault();
   }
-
-})
-
 
 })
