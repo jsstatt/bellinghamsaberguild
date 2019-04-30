@@ -246,7 +246,7 @@ var folder = "https://www.bellinghamsaberguild.com/img/gallery";
 
 
  $('.submit').click(function(){
-   $.ajax({url: "text.txt", success: function(result){
+   $.ajax({url: "js/text.txt", success: function(result){
      $(".test").html(result);
    }});
  });
