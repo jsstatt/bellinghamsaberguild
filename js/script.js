@@ -245,6 +245,12 @@ var folder = "https://www.bellinghamsaberguild.com/img/gallery";
  });
 
 
+ $('.submit').click(function(){
+   $.ajax({url: "text.txt", success: function(result){
+     $(".test").html(result);
+   }});
+ });
+
 // email
 $('.submit').click(function (event) {
   const email = $('.email').val();
