@@ -146,6 +146,10 @@ function openSubTab(subTabName) {
   document.getElementById(subTabName).style.display = "block";
 }
 
+openSubTab("council");
+
+
+
 
 //caroucel
 const track = document.querySelector('.caroucel-track');
@@ -233,33 +237,6 @@ navNodes.addEventListener('click', e => {
 	displayArrows(slides, rightButton, leftButton, targetIndex);
 })
 
-// Gallery
- $('.submit').click(function(){
-var folder = "img/gallery";
- $.ajax({
-     url: folder,
-     success: function(data) {
-         $(data).find("a").attr("href", function(i, val) {
-             $(".gallery").append("<img src='" + folder + '/' + val + "'>");
-         });
-     }
- });
-});
-
-$(document).ready(function() {
-  $('.submit').click(function() {
-    $.ajax({
-      url: "img",
-      success: function(data){
-      $(data).find("a:contains(.jpg)").each(function(){
-        // will loop through
-        var images = $(this).attr("href");
-          $('<option value="' + images + '"></option>').html(images).appendTo('.product-images');
-        });
-      }
-    });
-  });
-});
 
 
  $('.submit').click(function(){
@@ -298,3 +275,5 @@ $('.submit').click(function (event) {
   }
 
 })
+
+openSubTab("preview");
