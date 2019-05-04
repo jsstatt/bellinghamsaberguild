@@ -1,3 +1,33 @@
+ham = document.querySelector(".ham-container");
+menu = document.querySelector(".menu-items");
+line = document.querySelector(".menu");
+lineItems = document.querySelector(".menu-items")
+center = document.querySelector(".center");
+thirdSaber = document.querySelector(".third-saber");
+textCircle = document.querySelector(".text-circle");
+
+// Logo
+logoCenter = document.querySelector(".logo-center");
+logoRight = document.querySelector(".logo-right");
+logoLeft = document.querySelector(".logo-left");
+logoRightCircle = document.querySelector(".logo-right-circle");
+logoLeftCircle = document.querySelector(".logo-left-circle");
+logoSword = document.querySelector(".logo-sword");
+
+//Menu items
+menuHome = document.querySelector(".menu-home");
+menuInfo = document.querySelector(".menu-info");
+menuGalley = document.querySelector(".menu-gallery");
+menuContacts = document.querySelector(".menu-contacts");
+
+//tabs
+tabHome = document.querySelector("#tab-home");
+tabInfo = document.querySelector("#tab-info");
+tabGallery = document.querySelector("#tab-gallery");
+tabContacts = document.querySelector("#tab-contacts");
+
+elementArray = [line,logoCenter,thirdSaber,logoRight,logoLeft,logoRightCircle,logoLeftCircle];
+elementLength = elementArray.length;
 
 // Scroll on Button Click
 window.smoothScroll = function(target) {
@@ -23,75 +53,26 @@ window.smoothScroll = function(target) {
     scroll(scrollContainer, scrollContainer.scrollTop, targetY, 0);
 }
 
-
-// Ham Menu
-bkg = document.querySelector(".background-container");
-ham = document.querySelector(".ham-container");
-line = document.querySelector(".menu");
-lineItems = document.querySelector(".menu-items")
-center = document.querySelector(".center");
-thirdSaber = document.querySelector(".third-saber");
-textCircle = document.querySelector(".text-circle");
-
-// Logo
-logoCenter = document.querySelector(".logo-center");
-logoRight = document.querySelector(".logo-right");
-logoLeft = document.querySelector(".logo-left");
-logoRightCircle = document.querySelector(".logo-right-circle");
-logoLeftCircle = document.querySelector(".logo-left-circle");
-logoSword = document.querySelector(".logo-sword");
-
-logoArray = [line, lineItems, logoCenter,logoRight,logoLeft,logoSword];
-logoLength = logoArray.length;
-elementArray = [line,logoCenter,thirdSaber,logoRight,logoLeft,logoRightCircle,logoLeftCircle];
-elementLength = elementArray.length;
-menu = document.querySelector(".menu-items");
-
-//Menu items
-menuHome = document.querySelector(".menu-home");
-menuInfo = document.querySelector(".menu-info");
-menuGalley = document.querySelector(".menu-gallery");
-menuContacts = document.querySelector(".menu-contacts");
-
-//tabs
-
-tabHome = document.querySelector("#tab-home");
-tabInfo = document.querySelector("#tab-info");
-tabGallery = document.querySelector("#tab-gallery");
-tabContacts = document.querySelector("#tab-contacts");
-
-line.addEventListener("click", function () {
-	 setTimeout(lineFunction, 200);
-	 menuToggle();
-	 window.smoothScroll(tabHome);
-})
-
 // Menu functions
 menuHome.addEventListener("click", function () {
-	 setTimeout(openContentFunction, 200);
 	 window.smoothScroll(tabHome);
 })
 
 menuInfo.addEventListener("click", function () {
-	 setTimeout(openContentFunction, 200);
 	 window.smoothScroll(tabInfo);
 })
 
 menuGalley.addEventListener("click", function () {
-	 setTimeout(openContentFunction, 200);
 	 window.smoothScroll(tabGallery);
 })
 
 menuContacts.addEventListener("click", function () {
-	 setTimeout(openContentFunction, 200);
 	 window.smoothScroll(tabContacts);
 })
 
-bkg.addEventListener("animationend", function(){
-		if (bkg.classList.contains("fade-in") === true){
-			bkg.classList.remove("fade-in")
-			bkg.classList.add("paused");
-		}
+line.addEventListener("click", function () {
+    setTimeout(lineFunction, 200);
+    menuToggle();
 })
 
 function lineFunction() {
@@ -104,8 +85,6 @@ function lineFunction() {
 				if (ham.classList.contains("move-up") === true) {
 					ham.classList.remove("move-up");
 					ham.classList.add("move-down");
-					bkg.classList.remove("fade-in");
-					bkg.classList.add("fade-out");
 				}
 		} else {
 				elementArray[i].classList.remove("inactive");
@@ -114,26 +93,8 @@ function lineFunction() {
 	}
 }
 
-function openContentFunction() {
-		// hamburger
-	if (ham.classList.contains("move-down") === true) {
-		ham.classList.remove("move-down");
-		ham.classList.add("move-up");
-	} else {
-		ham.classList.add("move-up");
-	}
-		// background
-	if (bkg.classList.contains("fade-out") === true) {
-		bkg.classList.remove("fade-out");
-		bkg.classList.add("fade-in");
-	} else {
-		bkg.classList.add("fade-in");
-	}
-
-}
-
 function menuToggle() {
-	 menu.classList.toggle("active")
+  menu.classList.toggle("active")
 }
 
 // tabs
@@ -147,8 +108,6 @@ function openSubTab(subTabName) {
 }
 
 openSubTab("council");
-
-
 
 
 //caroucel
@@ -236,14 +195,6 @@ navNodes.addEventListener('click', e => {
 	updateNodes(currentNode, targetNode);
 	displayArrows(slides, rightButton, leftButton, targetIndex);
 })
-
-
-
- $('.submit').click(function(){
-   $.ajax({url: "js/text.txt", success: function(result){
-     $(".test").html(result);
-   }});
- });
 
 // email
 $('.submit').click(function (event) {
